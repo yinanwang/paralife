@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<link rel="stylesheet" href="css.css"/>
+<script language="javascript" src="question.js"></script>
+</head>
+<body>
+	
+	<div>
+		<img class="bar" src="img/bar6.jpg" />
+		<p class="question">When you feel blue, what do you usually do?</p>
+		<div class="choicepic relative fleft">
+			<a href="question7.htm"><img id="c1" src="img/blue1.jpg" /></a>
+			<div id="c2">
+				<img class="absolute textbar" src="img/textbar.png" />
+				<p class="absolute choicetext2">listen to sad music <br>and shed some tears</p>
+			</div>
+		</div>
+		<div class="choicepic relative fleft">
+			<a href="question7.htm"><img id="c3" src="img/blue2.jpg" /></a>
+			<div id="c4">
+				<img class="absolute textbar" src="img/textbar.png" />
+				<p class="absolute choicetext">watch TV and laugh out loud</p>
+			</div>
+		</div>
+		<div class="choicepic relative fleft">
+			<a href="question7.htm"><img id="c5" src="img/blue3.jpg" /></a>
+			<div id="c6">
+				<img class="absolute textbar" src="img/textbar.png" />
+				<p class="absolute choicetext">talk to friends</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script type="text/javascript">-->
+document.getElementById('c1').onmouseover = function(){
+document.getElementById('c2').style.display = 'block';
+document.getElementById('c1').style.opacity = '0.7';
+}
+
+document.getElementById('c1').onmouseout = function(){
+document.getElementById('c2').style.display = 'none';
+document.getElementById('c1').style.opacity = '1';
+
+}
+
+document.getElementById('c3').onmouseover = function(){
+document.getElementById('c4').style.display = 'block';
+document.getElementById('c3').style.opacity = '0.7';
+
+}
+
+document.getElementById('c3').onmouseout = function(){
+document.getElementById('c4').style.display = 'none';
+document.getElementById('c3').style.opacity = '1';
+
+
+}
+document.getElementById('c5').onmouseover = function(){
+document.getElementById('c6').style.display = 'block';
+document.getElementById('c5').style.opacity = '0.7';
+
+}
+
+document.getElementById('c5').onmouseout = function(){
+document.getElementById('c6').style.display = 'none';
+document.getElementById('c5').style.opacity = '1';
+}
+</script>

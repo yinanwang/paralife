@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<link rel="stylesheet" href="css.css"/>
+<script language="javascript" src="question.js"></script>
+</head>
+<body>
+	
+	<div>
+		<img class="bar" src="img/bar10.jpg" />
+		<p class="question">If you could upgrade something about yourself, what would you choose?</p>
+		<div class="choicepic relative fleft">
+			<a href="javascript: randomlinks();"><img id="c1" src="img/brain.jpg" /></a>
+			<div id="c2">
+				<img class="absolute textbar" src="img/textbar.png" />
+				<p class="absolute choicetext">smart brain</p>
+			</div>
+		</div>
+		<div class="choicepic relative fleft">
+			<a href="javascript: randomlinks();"><img id="c3" src="img/body.jpg" /></a>
+			<div id="c4">
+				<img class="absolute textbar" src="img/textbar.png" />
+				<p class="absolute choicetext">nice body</p>
+			</div>
+		</div>
+		<div class="choicepic relative fleft">
+			<a href="javascript: randomlinks();"><img id="c5" src="img/personality.jpg" /></a>
+			<div id="c6">
+				<img class="absolute textbar" src="img/textbar.png" />
+				<p class="absolute choicetext">ideal personality</p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+<script type="text/javascript">
+document.getElementById('c1').onmouseover = function(){
+document.getElementById('c2').style.display = 'block';
+document.getElementById('c1').style.opacity = '0.7';
+}
+
+document.getElementById('c1').onmouseout = function(){
+document.getElementById('c2').style.display = 'none';
+document.getElementById('c1').style.opacity = '1';
+
+}
+
+document.getElementById('c3').onmouseover = function(){
+document.getElementById('c4').style.display = 'block';
+document.getElementById('c3').style.opacity = '0.7';
+
+}
+
+document.getElementById('c3').onmouseout = function(){
+document.getElementById('c4').style.display = 'none';
+document.getElementById('c3').style.opacity = '1';
+
+
+}
+document.getElementById('c5').onmouseover = function(){
+document.getElementById('c6').style.display = 'block';
+document.getElementById('c5').style.opacity = '0.7';
+
+}
+
+document.getElementById('c5').onmouseout = function(){
+document.getElementById('c6').style.display = 'none';
+document.getElementById('c5').style.opacity = '1';
+}
+/*function newWindow(){
+   top.location.href = 'answer1.htm';};*/
+
+function randomlinks(){
+    var myrandom=Math.round(Math.random()*3)
+    var links=new Array()
+    links[0]="answer1.htm"
+    links[1]="answer2.htm"
+    links[2]="answer3.htm"
+    links[3]="answer4.htm"
+     
+    window.location=links[myrandom]
+}
+
+</script>
